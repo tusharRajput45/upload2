@@ -1,0 +1,21 @@
+.explore_content {
+  height: auto;
+  display: block;
+}
+.explore_content .content{
+  padding: 20px;
+  background-color: rgb(154, 166, 177);
+  width: 100%;
+}
+.col{
+    padding: 0px;
+}
+.explore_content .img {
+  padding: 0px;
+  width: 100%;
+  height: 400px;
+  background-image: url("images/Vincitore.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
