@@ -1,0 +1,128 @@
+.footer-wrapper {
+    background-color: rgb(241, 238, 238);
+    color: black;
+  }
+  .footer-widget-wrapper {
+    padding-bottom: 25px;
+  }
+  .widget-title {
+    font-size: 20px;
+    padding: 10px 10px 10px 0;
+    color: rgb(29, 26, 26);
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  address {
+    color: rgb(31, 28, 28);
+  }
+  .link {
+    color: rgb(14, 13, 13);
+    font-size: 15px;
+  }
+  .link:hover {
+    text-decoration: none;
+    color: rgb(230, 28, 95);
+  }
+  .title_link {
+    color: rgb(22, 24, 24);
+    font-size: 15px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .title_link:hover {
+    text-decoration: none;
+  }
+  .widget-list {
+    margin-left: -30px;
+    margin-top: 20px;
+  }
+  .widget-list li {
+    list-style: none;
+    margin: 0;
+  }
+  .newsletter-widget-wrap {
+    color: rgb(143, 132, 132);
+  }
+  .footer-bottom-area {
+    background-color: rgb(71, 71, 71);
+  }
+  .footer-copyright-area {
+    padding: 18px;
+    color: white;
+    float: left;
+  }
+  .form-input {
+    padding: 6px;
+    margin-right: 5px;
+  }
+  .powered_text {
+    color: rgb(146, 152, 158);
+  }
+  .powered_link {
+    color: white;
+    margin-right: 20px;
+  }
+  .powered_link:hover {
+    text-decoration: none;
+    color: rgb(170, 160, 160);
+  }
+  footer a {
+    text-decoration: none;
+  }
+  .footer_input {
+    border-bottom: 2px solid white;
+    background-color: black;
+  }
+@media screen and (max-width: 850px) {
+  .footer-wrapper{
+    width: 850px;
+  }
+  .footer-widget-wrapper{
+    padding-left: 30px;
+  }
+  .widget-title{
+    font-size: 35px;
+  }
+  address{
+    font-size: 25px;
+  }
+  .title_link{
+    font-size: 35px;
+  }
+  .link{
+     padding-left: 20px;
+     font-size: 25px;
+  }
+  .footer-copyright-area{
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-wrapper{
+    width: 600px;
+  }
+  .footer-widget-wrapper{
+    padding-left: 25px;
+  }
+  .widget-title{
+    font-size: 30px;
+  }
+  address{
+    font-size: 20px;
+  }
+  .title_link{
+    font-size: 30px;
+  }
+  .link{
+     padding-left: 10px;
+     font-size: 20px;
+  }
+  /* .powered_text{
+  } */
+}
+@media screen and (max-width: 250px) {
+  .footer-wrapper{
+    width: 600px;
+  }
+  .footer-widget-wrapper{
+    padding-left: 25px;
+  }
+}

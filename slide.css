@@ -1,0 +1,149 @@
+		/* default stylings */ 
+		* { 
+			box-sizing: border-box; 
+			margin: 0; 
+			padding: 0; 
+		} 
+
+		.container_banner { 
+			display: flex; 
+			flex-direction: column; 
+			justify-content: center; 
+			align-items: center; 
+			margin: auto; 
+			width:100%; 
+			height: 500px; 
+      margin-bottom: 15%;
+		} 
+		.main-heading { 
+			padding: 2rem 0 2rem 0; 
+		} 
+
+		.content { 
+			position: relative; 
+		} 
+
+		.carousel-content { 
+			position: absolute; 
+			/*to center the content horizontally and vertically*/ 
+			top: 50%; 
+			left: 50%; 
+			transform: translate(-50%, -50%); 
+			text-align: center; 
+			z-index: 50; 
+		} 
+		.carousel-heading { 
+			font-size: 3rem; 
+			color: #308d46; 
+			margin-bottom: 1rem; 
+		} 
+		/*----- end of carousel content stylings ----- */ 
+
+		/* ----- slideshow stylings ----- */ 
+/* ----- slideshow stylings ----- */
+.slideshow {
+    height: 100%;
+    overflow: hidden; /* to hide slides in x-direction */
+    position: relative;
+  }
+  
+  /* wrapper which wraps all the slideshow images stylings */
+  .slideshow-wrapper {
+    display: flex;
+    /* Change the width to 200% for two images */
+    width: 200%;
+    height: 100%;
+    position: relative;
+    /* Adjust the animation duration accordingly */
+    animation: slideshow 10s infinite; /* Reduce the animation duration */
+  }
+  
+  /* define width and height for images*/
+  .slide {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* @keyframes are used to provide animations */
+  @keyframes slideshow {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 0;
+    }
+    60% {
+      left: -100%; /* Adjust the left value for two images */
+    }
+    100% {
+      left: -100%; /* Adjust the left value for two images */
+    }
+  }
+  /* ----- end of slideshow stylings ----- */
+  
+  /* ----- carousel control buttons stylings ----- */
+  .slide-btn {
+    background-color: #bbb;
+    border-radius: 50%;
+    border: .2rem solid #d38800;
+    width: 1.2rem;
+    height: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    /* stylings for positioning the buttons at the bottom of the carousel */
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 70;
+  }
+  
+  /* Adjust the left values for two buttons */
+  .slide-btn-1 {
+    left: 45%;
+  }
+  
+  .slide-btn-2 {
+    left: 55%; /* Adjust the left value for two buttons */
+  }
+  
+  /* Adjust the left values in focus styles */
+  .slide-btn-1:focus~.slideshow-wrapper {
+    animation: none;
+    left: 0;
+  }
+  
+  .slide-btn-2:focus~.slideshow-wrapper {
+    animation: none;
+    left: -100%; /* Adjust the left value for two images */
+  }
+  .container_sub_banner{
+    width: 100%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+  }
+@media (max-width: 850px) {
+  .container_banner{
+    width: 850px;
+    margin-bottom: 0%;
+  }
+}
+@media (max-width: 600px) {
+  .container_banner{
+    width: 600px;
+    margin-bottom: 0%;
+  }
+}
+@media (max-width: 250px) {
+  .container_banner{
+    width: 600px;
+    margin-bottom: 0%;
+  }
+}

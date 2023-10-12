@@ -1,0 +1,93 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 0.3;
+  height: 60px;
+}
+header .logo {
+  margin-top: 13px;
+  margin-left: 30px;
+  color: white;
+  cursor: pointer;
+}
+header .desktop_ul {
+  color: white;
+  float: right;
+}
+header .desktop_ul li {
+  float: left;
+  padding: 20px;
+  list-style: none;
+  font-size: 15px;
+}
+header .desktop_ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+header .desktop_ul li a:hover {
+  background-color: blue;
+}
+header .mobile_ul {
+  visibility: hidden;
+}
+@media screen and (max-width: 850px) {
+  header {
+    width: 850px;
+  }
+  header .desktop_ul {
+    display: none;
+  }
+  header .mobile_ul {
+    color: white;
+    float: right;
+    visibility: visible;
+  }
+  header .mobile_ul li {
+    float: left;
+    padding: 20px;
+    list-style: none;
+    font-size: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  header .mobile_ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+  }
+  header .mobile_ul li a:hover {
+    background-color: blue;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    width: 600px;
+  }
+  header .desktop_ul {
+    display: none;
+  }
+  header .mobile_ul {
+    color: white;
+    float: right;
+    visibility: visible;
+  }
+  header .mobile_ul li {
+    float: left;
+    padding: 20px;
+    list-style: none;
+    font-size: 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  header .mobile_ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+  }
+  header .mobile_ul li a:hover {
+    background-color: blue;
+  }
+}

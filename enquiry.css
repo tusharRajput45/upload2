@@ -1,0 +1,74 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family:"Open Sans",sans-serif;
+}
+.enquiry_form {
+  width: 28%;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 3%;
+  background-color: black;
+  opacity: 0.6;
+}
+.enquiry_form .title {
+  text-align: center;
+  font-size: 25px;
+}
+.enquiry_form form {
+  margin-bottom: 5%;
+}
+.submit_btn{
+  background-color: white;
+  border-radius: 8px;
+}
+.submit_btn:hover{
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 850px) {
+  #enquiry_form {
+    display: block;
+    position:static;
+    width: 850px;
+    padding: 20px;
+    padding-bottom: 3%;
+    background-color: white;
+    border: none;
+    opacity: 1;
+  }
+  .checkbox_text{
+    color: black;
+  }
+  .submit_btn{
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+  }
+  .submit_btn:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+}
+@media screen and (max-width: 600px) {
+  #enquiry_form {
+    display: block;
+    position:static;
+    width: 600px;
+    padding: 20px;
+    padding-bottom: 3%;
+    background-color: white;
+    border: none;
+    opacity: 1;
+  }
+  .checkbox_text{
+    color: black;
+  }
+}
